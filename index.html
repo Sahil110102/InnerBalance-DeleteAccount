@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://www.googleapis.com/identitytoolkit/v3/recaptcha/v2/recaptcha.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+  <script src="https://www.firebaseapp.com/__/firebase/9.8.2/firebase-app.js"></script>
+  <script src="https://www.firebaseapp.com/__/firebase/9.8.2/firebase-auth.js"></script>
+  
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="./images/image.png" alt="Inner Balance logo" class="icon">
+      <h1 class="title" style="font-family: 'Roboto', sans-serif; align-items: center;"><b>INNER BALANCE</b></h1>
+    </header>
+    <div class="form">
+        <h2>🗑 Delete Account</h2>
+      <form action="/delete-account" method="post">
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <p class="warning">Deleting your account is permanent and cannot be undone. Please make sure that you have saved any important data before proceeding. If you have any doubts, you can always cancel the deletion process.</p>
+        <div class="button-container">
+          <button type="submit" id="delete-button">
+            Delete Account
+          </button>
+          <button type="button" id="cancel-button">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="account-deleted.html"></script>
+</body>
+</html>

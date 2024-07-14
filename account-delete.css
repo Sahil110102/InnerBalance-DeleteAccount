@@ -1,0 +1,26 @@
+body {
+    background-color: #2196F3;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+.confirmation-box {
+    background-color: white; /* Light gray background */
+    border: 1px solid #2196F3; /* Light gray border */
+    padding: 30px; /* Inner padding */
+    margin: 0 auto; /* Center the box horizontally */
+    width: 400px; /* Set a width for the box */
+    text-align: center; /* Center-align the content within the box */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+  
+  h1 {
+  
+    margin-bottom: 15px; /* Add some space below the heading */
+  }
+  
